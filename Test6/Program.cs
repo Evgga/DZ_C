@@ -1,14 +1,14 @@
-﻿// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+﻿Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите число:");
-            int num;
-            num = Convert.ToInt32(Console.ReadLine());
+int remDiv = num % 2;
 
-            if(num % 2 == 1)
-            {
-                Console.WriteLine("Число " + num + " является: нечётным");
-            }
-            else
-            {
-                Console.WriteLine("Число " + num + "является: чётным");
-            }
+if(remDiv == 0)
+{
+    Console.WriteLine("Делится на 2 без остатка: Да");
+}
+else
+{
+    Console.WriteLine("Делится на 2 без остатка: Нет");
+}
+
